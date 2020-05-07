@@ -81,3 +81,12 @@ cb3 = mpl.colorbar.ColorbarBase(ax, cmap=cmap,
                                 ticks=bounds,
                                 spacing='uniform',
                                 orientation='horizontal')
+#Alternative
+#import matplotlib.colors as mcol
+#import matplotlib.cm as cm
+
+#cmap = mcol.LinearSegmentedColormap.from_list("Cmap",['navy', 'royalblue', 'cornflowerblue', 'lightskyblue', 'lightblue', 'white',
+                                 #'peachpuff', 'sandybrown', 'chocolate', 'red', 'darkred'])
+#cpick = cm.ScalarMappable(cmap=cmap)
+#cpick.set_array([])
+#plt.colorbar(cpick, orientation='horizontal', boundaries=np.linspace(0,1,12)/[0.00, 0.09, 0.18, 0.27, 0.36, 0.45, 0.55, 0.64, 0.73, 0.82, 0.91, 1.00])
